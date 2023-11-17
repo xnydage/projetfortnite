@@ -1,2 +1,17 @@
-a=1
-print(a)
+def display_map(m, d):
+
+    for i in range(len(m)):
+        for j in range(len(m[i])):
+            print(d[m[i][j]], end="")
+        print()
+
+
+map_example = [
+    [0, 0, 0, 1, 1],
+    [0, 0, 0, 0, 1],
+    [1, 1, 0, 0, 0],
+    [0, 0, 0, 0, 0]
+]
+dico_example = {0: ' ', 1: '#'}
+
+display_map(map_example, dico_example)
