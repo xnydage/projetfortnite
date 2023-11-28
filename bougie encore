@@ -1,0 +1,36 @@
+def display_map(maps,dico) :
+    for i in m :
+        for j in i:
+            print(d[j], end="")
+        print()
+    
+mapstest=[[0,0,0,1,1],
+    [0,0,0,0,1],
+    [1,1,0,0,0],
+    [0,0,0,0,0]]
+dicotest={0:' ',1:'#'}
+
+def create_perso(depart) :
+    perso={"char":"o","x":depart[0],"y":depart[1]}
+    return perso     
+
+departtest=(0,0)
+
+def display_map_perso(maps1,dico1,perso) :
+    mapy=[i.copy() for i in maps1]
+    mapy[perso["y"]][perso["x"]]=perso["char"]
+    for i in mapy :
+        for j in i:
+            print(dico1[j],end="")
+        print()
+    
+dicotest1={0:' ',1:'#',"o":"o"}
+    
+def update_p(letter,p):
+    if letter == "z"
+    elif letter == "s":
+        p['y'] += 1  
+    elif letter == "d":
+        p['x'] += 1 
+    elif letter == "q":
+        p['x'] -= 1
